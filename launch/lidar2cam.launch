@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+	<node pkg="lidar2cam" type="lidar2cam.py" name="lidar2cam_node" output="screen">
+		
+		<param name="cam_topic" value="/gmsl/A0"/>
+		<param name="pcl_topic" value="/velodyne/front/points"/>
+	</node>
+</launch>
